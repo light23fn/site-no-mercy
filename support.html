@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Suporte - No Mercy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Orbitron', sans-serif;
+    }
+    body {
+      background-color: #0a0a0a;
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #111;
+      border-bottom: 2px solid #00bfff;
+    }
+    nav a {
+      margin-left: 1rem;
+      text-decoration: none;
+      color: #ccc;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #fff;
+    }
+    main {
+      flex: 1;
+      max-width: 700px;
+      margin: 3rem auto;
+      padding: 0 1rem;
+      text-align: center;
+    }
+    h1 {
+      color: #00bfff;
+      margin-bottom: 1.5rem;
+      text-shadow: 0 0 10px #00bfff;
+    }
+    form {
+      background: #111;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 15px #00bfffaa;
+      text-align: left;
+    }
+    label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+      color: #00bfff;
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 0.8rem;
+      margin-bottom: 1.2rem;
+      border-radius: 8px;
+      border: none;
+      font-size: 1rem;
+      resize: vertical;
+    }
+    textarea {
+      min-height: 120px;
+    }
+    input[type="submit"] {
+      background: #00bfff;
+      color: black;
+      border: none;
+      padding: 0.8rem 2rem;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 0 15px #00bfff;
+      font-size: 1.1rem;
+    }
+    input[type="submit"]:hover {
+      background: #00aaff;
+      box-shadow: 0 0 25px #00aaff;
+    }
+    footer {
+      background: #0a0a0a;
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.9rem;
+      color: #777;
+      border-top: 1px solid #222;
+      margin-top: auto;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>No Mercy</h1>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="support.html">Suporte</a>
+      <a href="rankings.html">Rankings</a>
+      <a href="eventos.html">Eventos</a>
+      <a href="loja.html">Loja</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Suporte e Ajuda</h1>
+    <p>Se tiveres alguma dúvida, problema técnico ou sugestão, preenche o formulário abaixo e entraremos em contacto contigo o mais rápido possível.</p>
+    <form id="form-suporte">
+      <label for="nome">Nome</label>
+      <input type="text" id="nome" name="nome" placeholder="O teu nome" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="O teu email" required />
+
+      <label for="mensagem">Mensagem</label>
+      <textarea id="mensagem" name="mensagem" placeholder="Escreve aqui a tua mensagem..." required></textarea>
+
+      <input type="submit" value="Enviar" />
+    </form>
+  </main>
+
+  <footer>
+    &copy; 2025 No Mercy. Todos os direitos reservados.
+  </footer>
+
+  <script>
+    document.getElementById('form-suporte').addEventListener('submit', function(event) {
+      event.preventDefault(); // evita envio real do form e recarregar página
+      alert('Mensagem enviada! Obrigado por contactar o suporte No Mercy.');
+      this.reset(); // limpa o formulário após envio
+    });
+  </script>
+</body>
+</html>

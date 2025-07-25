@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>No Mercy - Jogo de Ação</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet" />
+  <style>
+    /* Mantém seu CSS original */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Orbitron', sans-serif;
+    }
+    body {
+      background-color: #0a0a0a;
+      color: #fff;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #111;
+      border-bottom: 2px solid #00bfff;
+    }
+    nav a {
+      margin-left: 1rem;
+      text-decoration: none;
+      color: #ccc;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #fff;
+    }
+    .hero {
+      text-align: center;
+      padding: 4rem 2rem;
+      background: url('https://cdn.wallpapersafari.com/34/65/xrsKTL.jpg') center/cover no-repeat;
+      background-blend-mode: multiply;
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+    .hero h1 {
+      font-size: 3rem;
+      color: #00bfff;
+      text-shadow: 0 0 10px #00bfff;
+    }
+    .hero h2 {
+      font-size: 1.5rem;
+      margin-top: 1rem;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 1.5rem;
+      padding: 0.8rem 1.8rem;
+      background: #00bfff;
+      color: black;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background 0.3s ease;
+      box-shadow: 0 0 15px #00bfff;
+      font-size: 1.1rem;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background: #00aaff;
+      box-shadow: 0 0 25px #00aaff;
+    }
+    section {
+      padding: 3rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+      text-align: center;
+    }
+    footer {
+      background: #0a0a0a;
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.9rem;
+      color: #777;
+    }
+    .gallery {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-top: 2rem;
+    }
+    .gallery img {
+      width: 250px;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #00bfffaa;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px #00bfff;
+    }
+    .social-icons {
+      margin-top: 2rem;
+    }
+    .social-icons a {
+      margin: 0 1rem;
+      color: #00bfff;
+      font-size: 2rem;
+      transition: color 0.3s ease;
+      text-decoration: none;
+    }
+    .social-icons a:hover {
+      color: #00aaff;
+    }
+    .faq {
+      text-align: left;
+      max-width: 700px;
+      margin: 2rem auto;
+      color: #ddd;
+    }
+    .faq h3 {
+      margin-top: 1rem;
+      color: #00bfff;
+      cursor: pointer;
+    }
+    .faq p {
+      margin: 0.3rem 0 1rem 1rem;
+      display: none;
+      color: #ccc;
+    }
+
+    /* Estilos para a nova secção de botões */
+    .buttons-section {
+      margin: 3rem auto;
+      max-width: 500px;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>No Mercy</h1>
+    <nav>
+      <a href="#sobre">Sobre</a>
+      <a href="#jogo">O Jogo</a>
+      <a href="#galeria">Galeria</a>
+      <a href="#comunidade">Comunidade</a>
+      <a href="#contacto">Contato</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>No Mercy</h1>
+    <h2>O novo jogo Battle Royale, 100% feito por portugueses.</h2>
+    <a class="btn" href="#">Entrar com Epic Games</a>
+  </section>
+
+  <!-- Nova secção com botões para páginas externas -->
+  <section class="buttons-section">
+    <a class="btn" href="rankings.html">Rankings</a>
+    <a class="btn" href="eventos.html">Eventos</a>
+    <a class="btn" href="loja.html">Loja</a>
+  </section>
+
+  <section id="sobre">
+    <h2>Sobre o Projeto</h2>
+    <p>"No Mercy" é um jogo de ação competitivo, desenvolvido integralmente por talentos portugueses e inspirado no sucesso de Fortnite. Com um forte foco na diversão, na comunidade e em modos criativos, estamos a criar uma experiência única e envolvente, feita para surpreender.</p>
+  </section>
+
+  <section id="jogo">
+    <h2>Modos de Jogo</h2>
+    <p>Battle Royale, Ranked, Solo, Duo, Squads e muito mais. Prepara-te para uma experiência intensa e estratégica.</p>
+  </section>
+
+  <section id="galeria">
+    <h2>Galeria do Jogo</h2>
+    <div class="gallery">
+      <img src="https://cdn.wallpapersafari.com/34/65/xrsKTL.jpg" alt="Mapa do No Mercy" />
+      <img src="https://i.pinimg.com/originals/3c/21/bf/3c21bf930120aaf18438f3d31d7a9e45.jpg" alt="Personagem 1" />
+      <img src="https://i.pinimg.com/originals/58/13/c7/5813c7a6af14b9ab5412d29f6a7b5516.jpg" alt="Personagem 2" />
+      <img src="https://i.pinimg.com/originals/4a/ae/b9/4aaeb9d2c1d7b3a773044f49d493d715.jpg" alt="Gameplay" />
+    </div>
+  </section>
+
+  <section id="comunidade">
+    <h2>Junta-te à Comunidade</h2>
+    <p>Segue-nos nas redes sociais, participa no Discord e acompanha o desenvolvimento passo a passo. Este jogo também é teu!</p>
+    <div class="social-icons">
+      <a href="https://discord.gg/" target="_blank" title="Discord" aria-label="Discord">&#x1F4AC;</a>
+      <a href="https://instagram.com/" target="_blank" title="Instagram" aria-label="Instagram">&#x1F4F7;</a>
+      <a href="https://youtube.com/" target="_blank" title="YouTube" aria-label="YouTube">&#x25B6;</a>
+    </div>
+  </section>
+
+  <section id="contato">
+    <h2>Queres ajudar?</h2>
+    <p>Estamos à procura de criadores de conteúdo, developers, testers e designers talentosos. Se queres fazer parte deste projeto, envia-nos uma mensagem no Instagram ou no Discord e junta-te à nossa equipa!</p>
+  </section>
+
+  <section id="faq">
+    <h2>Perguntas Frequentes (FAQ)</h2>
+    <div class="faq">
+      <h3>Quando o jogo será lançado?</h3>
+      <p>Estamos a trabalhar com todo o gás para lançar a versão beta no início do próximo ano.</p>
+      <h3>Posso jogar com amigos?</h3>
+      <p>Sim! Teremos modos solo, duo, trio e squads, para jogar com os amigos.</p>
+      <h3>Como posso participar do desenvolvimento?</h3>
+      <p>Segue-nos no Discord e nas redes sociais para se juntar à equipe.</p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 No Mercy. Todos os direitos reservados.
+  </footer>
+
+  <script>
+    // FAQ toggle simples
+    document.querySelectorAll('.faq h3').forEach(q => {
+      q.addEventListener('click', () => {
+        const p = q.nextElementSibling;
+        if (p.style.display === 'block') {
+          p.style.display = 'none';
+        } else {
+          p.style.display = 'block';
+        }
+      });
+    });
+  </script>
+</body>
+</html>
